@@ -6,7 +6,7 @@ pool:
 
 stages:
 - stage: BuildApp
-  displayName: Build Apps
+  displayName: Build HoussemDellai Apps
   jobs:
   - job: BuildFrontendApp
     displayName: Build Frontend App
@@ -25,7 +25,7 @@ stages:
       displayName: unit tests backend
 
 - stage: DeployDev
-  displayName: Deploy to DEV environment
+  displayName: Deploy HoussemDellai App to DEV environment
   jobs:
   - job: DeployFrontendDev
     displayName: Deploy frontend to DEV
@@ -40,7 +40,7 @@ stages:
       displayName: deploy backend app to DEV
 
 - stage: DeployProd
-  displayName: Deploy to PROD environment
+  displayName: Deploy HoussemDellai App to PROD environment
   pool:
     vmImage: 'macOS-10.14'
   jobs:
